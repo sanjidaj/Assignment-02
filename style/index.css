@@ -4,12 +4,13 @@
  
 }
 nav{
-    max-width: 100rem;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #412567;
+    background-color: #2f1b4a;
     padding: 1.8rem 12.5rem;
+    
     
 }
 nav .menu{
@@ -37,5 +38,66 @@ nav .menu a{
     display: flex;
     gap:0.25rem;
     align-items: center;
+
+}
+#banner{
+    align-items: center;
+    text-align: center;
+    background: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+}
+#banner .button{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 6.25rem;
+}
+.btn-2{
+    background: none;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    color: #00FF88;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem ;
+    display: flex;
+    gap:0.25rem;
+    align-items: center;
+}
+ #banner .image{
+    position: relative;
+ }
+.img-1{
+       padding: 6.31rem 39.06rem 0 39.06rem; 
+       margin-bottom: 2.5rem;
+}
+.img-2{
+    position: absolute;
+    top: 10.6rem;
+    left: 45.93rem;
+}
+.badge{
+    position: absolute;
+    top: 20%;
+    left: 57%;
+    color: #1A0B2E;
+    font-weight: 600;
+    border-radius: 1000px;
+    padding: 0.5rem 1rem;
+    background-color: #00FF88;
+    font-size: 1.12rem;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+}
+#banner h1{
+    font-size: 3.75rem;
+    color: white;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+p{
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
 
 }
