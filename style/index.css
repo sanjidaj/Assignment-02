@@ -102,6 +102,7 @@ p{
     font-size: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.25rem;
+    opacity: 0.6;
 
 }
 #about{
@@ -197,7 +198,7 @@ p{
 }
 #videos{
     background: #1A0B2E;
-    padding: 7.5rem 12.5rem;
+    padding: 7.5rem 12.5rem 0 12.5rem;
     align-items: center;
     text-align: center;
 }
@@ -237,4 +238,65 @@ p{
 .card2 .time{
     display: flex;
     gap: 0.37rem;
+    color: #00FF88;
+    font-weight: 600;
+}
+#host-section{
+    background: #1A0B2E;
+    padding: 7.5rem 12.5rem; 
+}
+#host-section h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.host-container{
+    background: #230E3D;
+    display: flex;
+    gap: 1.5rem;
+    padding: 3.03rem 2.5rem;
+    border-radius: 40px;
+    
+}
+.host-container h6{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#ffffff ;
+    margin-bottom: 1rem;
+}
+.host-container .social-link{
+    border: 1px solid #533C72;
+    padding: 0.6rem;
+    border-radius: 100%;
+    gap: 0.5rem;
+
+}
+.footer-section{
+    align-items: center;
+    text-align: center;
+    background-color: #1A0B2E;
+    background: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    padding:  7.5rem ;
+
+}
+.footer-section .footer-logo{
+    margin-bottom: 2rem;
+ 
+}
+
+.links{
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.links a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.5rem;
 }
