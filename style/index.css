@@ -43,7 +43,11 @@ nav .menu a{
     align-items: center;
 
 }
+.hamburger{
+    display: none;
+}
 #banner{
+    max-width: 100%;
     align-items: center;
     text-align: center;
     background-color: #1A0B2E;
@@ -69,20 +73,28 @@ nav .menu a{
     align-items: center;
 }
  #banner .image{
+    max-width: 100%;
     position: relative;
  }
-.img-1{
-       padding: 6.31rem 39.06rem 0 39.06rem;       
+.img-1 {
+    display: block;
+    width: 100%;      
+    max-width: 400px; 
+    margin: 0 auto;    
+    padding: 2rem 0;  
 }
-.img-2{
+
+.img-2 {
     position: absolute;
-    top: 10.6rem;
-    left: 45.93rem;
+    top: 27%;         
+    left: 46%;   
+    max-width: 100%;   
+   
 }
 .badge{
     position: absolute;
-    top: 30%;
-    left: 57%;
+    top: 18%;
+    left: 58%;
     color: #1A0B2E;
     font-weight: 600;
     border-radius: 1000px;
@@ -106,6 +118,7 @@ p{
 
 }
 #about{
+    max-width: 100%;
     background: #1A0B2E;
     justify-content: center;
     align-items: center;
@@ -152,7 +165,7 @@ p{
     display: grid;
     gap: 1.8rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, minmax(200px, auto));
 
 }
 .big-layout{
@@ -197,6 +210,7 @@ p{
     line-height: 1.5rem;
 }
 #videos{
+    max-width: 100%;
     background: #1A0B2E;
     padding: 7.5rem 12.5rem 0 12.5rem;
     align-items: center;
@@ -242,6 +256,7 @@ p{
     font-weight: 600;
 }
 #host-section{
+    max-width: 100%;
     background: #1A0B2E;
     padding: 7.5rem 12.5rem; 
 }
@@ -274,6 +289,7 @@ p{
 
 }
 .footer-section{
+    max-width: 100%;
     align-items: center;
     text-align: center;
     background-color: #1A0B2E;
@@ -300,3 +316,297 @@ p{
     display: flex;
     gap: 0.5rem;
 }
+@media screen and (max-width:576px){
+   nav {
+        padding: 1rem 1.5rem;
+        justify-content: space-between;
+    }
+    
+    nav .logo {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    
+    nav .logo img:first-child {
+        max-width: 100px;
+        height: auto;
+    }
+    
+    .hamburger {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    
+    nav .menu {
+        display: none;
+    }
+    
+    nav > div:last-child {
+        display: none;
+    }
+ 
+    #banner {
+        padding: 2rem 1.5rem 3rem;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    #banner .image {
+        margin-bottom: 1.5rem;
+    }
+    
+    .img-1 {
+        max-width: 240px;
+        padding: 1.5rem 0 1rem;
+    }
+    
+    .img-2 {
+        width: 100px;
+        top: 28%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .badge {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.75rem;
+        top: 16%;
+        left: 75%;
+        transform: translateX(-50%);
+    }
+    
+    #banner h1 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 0.75rem;
+    }
+    
+    #banner > div:nth-child(2) p {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    #banner .button {
+        flex-direction: row;
+        gap: 0.75rem;
+        padding: 0;
+    }
+    
+    .btn,.btn-2 {
+        font-size: 0.875rem;
+        padding: 0.625rem 1rem;
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .btn img,.btn-2 img {
+        width: 18px;
+        height: 18px;
+    }
+    
+    #about {
+        padding-bottom: 3rem;
+    }
+    
+    #about .about-header {
+        padding: 3rem 1.5rem 0;
+        margin-bottom: 3rem;
+    }
+    
+    #about .about-header h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    #about .about-header p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    
+    .item {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 0 1.5rem;
+    }
+    
+    .item h1 {
+        font-size: 2rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .item p {
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+   
+    #card-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    #card-container h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #card-container .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+    
+    .big-layout,.wide-layout,.side-layout,.normal-layout {
+        grid-column: span 1;
+        grid-row: span 1;
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+    
+    .card img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 1rem;
+    }
+    
+    .card h4 {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .card p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    
+    #videos {
+        padding: 3rem 1.5rem 0;
+    }
+    
+    #videos h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    #videos .video-cards {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .card2 {
+        width: 100%;
+    }
+    
+    .card2 iframe {
+        width: 100%;
+        height: 200px;
+        display: block;
+    }
+    
+    .card2 h5 {
+        font-size: 1.125rem;
+    }
+    
+    .card2 p {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+    
+    .card2 .time {
+        font-size: 0.875rem;
+    }
+    
+    #host-section {
+        padding: 3rem 1.5rem;
+    }
+    
+    #host-section h2 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .host-container {
+        flex-direction: column;
+        padding: 2rem 1.5rem;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .host-container > div:first-child {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .host-container > div:first-child img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .host-container h6 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .host-container p {
+        font-size: 0.875rem;
+        text-align: center;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .host-container > div:last-child {
+        display: flex;
+        justify-content: center;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+    
+    .host-container .social-link {
+        width: 44px;
+        height: 44px;
+        padding: 0.5rem;
+    }
+  
+    .footer-section {
+        padding: 3rem 1.5rem;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .footer-section .footer-logo {
+        margin-bottom: 2rem;
+    }
+    
+    .footer-section .footer-logo img {
+        max-width: 200px;
+    }
+    
+    .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .links a {
+        font-size: 0.875rem;
+        justify-content: flex-start;
+    }
+    
+    .footer p {
+        font-size: 0.75rem;
+    }
+}
+
+
