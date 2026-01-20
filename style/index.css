@@ -105,7 +105,7 @@ p{
 
 }
 #about{
-    background-color: #1A0B2E;
+    background: #1A0B2E;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -194,4 +194,47 @@ p{
 }
 .card p{
     line-height: 1.5rem;
+}
+#videos{
+    background: #1A0B2E;
+    padding: 7.5rem 12.5rem;
+    align-items: center;
+    text-align: center;
+}
+#videos h2{
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+#videos .video-cards{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.8rem;
+}
+.video-cards .card2{
+    background: #230E3D;
+    border-radius: 20px;
+    text-align: left;
+}
+.card2 iframe{
+    border-radius: 20px;
+}
+.card2 h5{
+         padding: 1rem;
+
+}
+.card2 p{
+    padding: 1rem;
+
+}
+.card2 h5{
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+.card2 .time{
+    display: flex;
+    gap: 0.37rem;
 }
