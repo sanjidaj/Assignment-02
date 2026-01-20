@@ -117,7 +117,7 @@ p{
 
 }
 #about .about-header h2{
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -133,5 +133,65 @@ p{
       font-size: 3rem;
       font-weight: 900;
 }
+#card-container{
+    background-color: #230E3D;
+    padding: 7.5rem 12.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#card-container h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+}
+#card-container .card{
+    text-align: left;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
 
+}
+.big-layout{
+            grid-column: span 1;
+            grid-row: span 2;
+            border-radius: 40px;
+            background: rgba(53, 17, 101, 0.4);
+            padding: 2.5rem;
 
+}
+.wide-layout{
+            grid-column: span 2;
+            grid-row: span 1;
+            border-radius: 40px;
+            background: rgba(53, 17, 101, 0.4);
+            padding: 2.5rem;
+}
+.side-layout{
+            grid-column: span 2;
+            grid-row: span 2;
+            border-radius: 40px;
+            background: rgba(53, 17, 101, 0.4);
+            padding: 2.5rem;
+}
+
+.normal-layout{
+            grid-column: span 1;
+            grid-row: span 2;
+            border-radius: 40px;
+            background: rgba(53, 17, 101, 0.4);
+            padding: 2.5rem;
+}
+.card img{
+    margin-bottom: 1rem;
+}
+.card h4{
+     font-size: 1.5rem;
+     color: #ffffff;
+     margin-bottom: 1rem;
+}
+.card p{
+    line-height: 1.5rem;
+}
